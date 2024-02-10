@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navbar</title>
+	<style>
+		*
+		{
+			margin:0px;
+		}
+		header
+		{
+			background-color:black;
+			color:white;
+			display:flex;
+			height:60px;
+			align-items:center;
+			justify-content:space-between;
+		}
+		#links>a 
+		{
+			color:white;
+			text-decoration:none;
+			margin:20px;
+		}
+		#landing-page
+		{
+			background:blue url("group.jpg") no-repeat 0px 0px scroll;
+			background-size:cover;
+			height:100vh;
+		}
+		#landing-page>#content-section
+		{
+			background-color:rgba(0, 0, 0,0.3);
+			height:inherit;
+			text-align:center;
+			color:white;
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
+		}
+		#landing-page>#content-section>h1::first-letter
+		{
+			font-size:100px;
+			color:orange;
+		}	
+		#landing-page>#content-section>button
+		{
+			border:none;
+			outline:none;
+			padding:7px 20px;
+			background-color:orange;
+		}	
+
+
+		@media only screen and (min-width:0px) and (max-width:900px)
+		{
+			header
+			{
+				flex-direction:column;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Jspiders</h1>
+		<div id="links">
+			<a href="#">Courses</a>
+			<a href="#">About</a>
+			<a href="#">Gallery</a>
+			<a href="#">Contact</a>
+			<a href="#">Settings</a>
+			<a href="#">Placements</a>
+		</div>
+	</header>
+
+	<!-- Landing Page -->
+	<div id="landing-page">
+		<div id="content-section">
+			<h1>Welcome To Jspiders</h1>
+			<p>Incididunt exercitation sed duis in duis in sit enim minim mollit adipisicing esse magna officia pariatur duis. Irure officia laboris dolore elit sunt nostrud proident laboris et tempor sunt laborum ut. Cupidatat et consectetur aliquip exercitation sint aliqua esse qui ut commodo consectetur cillum laborum.</p>
+			<button>Read More</button>
+		</div>
+	</div>
+</body>
+</html>
