@@ -1,0 +1,293 @@
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+  }
+  .backcol{
+    background-color: rgb(190, 137, 37);
+    height: 600px;
+  }
+  .backcol h1{
+    margin-top: 200px;
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+  .backcol h2{
+    font-size: 37px;
+  }
+  .img1{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+  }
+  .line{
+    height: 5px;
+    width: 60px;
+    background-color: orangered;
+  }
+  .par{
+    margin: auto;
+    margin-left: 20px;
+  }
+  .logo{
+    letter-spacing: 3px;
+    margin-left: 20px;
+  }
+ 
+
+  .box1{
+    height: 220px;
+    width: 380px;
+    border: 10px solid black;
+    margin: auto;
+    margin-top: 180px;
+    border-radius: 5px 5px 0px 0px ;
+    background-color: white;
+  }
+  .box2{
+    height: 50px;
+    width: 380px;
+    background-color: white;
+    margin: auto;
+    border-radius: 2px 2px 15px 15px;
+  }
+  .trapezoid {
+	border-bottom: 50px solid #fff;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+  margin: auto;
+}
+.oval {
+    height: 30px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    margin: auto;
+    
+  }
+  .yourlogo{
+    margin-top: 60px;
+    font-size: 40px;
+    font-weight: 1000;
+  }
+
+  /* Media qurry */
+
+  @media only screen and (max-width: 320px) {
+    .box1{
+      height: 200px;
+      width: 270px !important;
+      margin-top: 80px;
+    }
+    .box2{
+      height: 30px;
+      width: 270px !important;
+    }
+    .oval {
+      height: 30px;
+      width: 260px;
+      margin-left:17px !important;
+    }
+    .trapezoid {
+      margin-left:83px !important;
+    }
+    .backcol h1{
+      margin-top: -0px !important;
+      font-size: 30px;
+    }
+    .backcol h2{
+      font-size: 30px;
+    }
+    .backcol p{
+      font-size: 10px;
+    }
+    .par{
+      margin:0px;
+    }
+    .logo h4{
+      font-size: 10px;
+    }
+    .logo h1{
+      font-size: 10px;
+    }
+    .par{
+      margin: auto;
+      margin-left: 0px;
+    }
+    .logo{
+      letter-spacing: 0px;
+      margin-left: 0px;
+    }
+    .photos img{
+      margin-left: 8px;
+    }
+    .photos p{
+      margin-left: 8px;
+    }
+    
+  }
+  @media only screen and (max-width: 375px) {
+    .box1{
+      height: 200px;
+      width: 270px !important;
+      margin-top: 80px;
+      margin-left:40px !important;
+    }
+    .box2{
+      height: 30px;
+      width: 270px !important;
+      margin-left:40px !important; 
+    }
+    .oval {
+      height: 30px;
+      width: 260px;
+      margin-left:45px !important;
+    }
+    .trapezoid {
+      margin-left:110px !important; 
+    }
+    .backcol h1{
+      margin-top: -0px !important;
+      font-size: 30px;
+    }
+    .backcol h2{
+      font-size: 30px;
+    }
+    .backcol p{
+      font-size: 10px;
+    }
+    .par{
+      margin:0px;
+    }
+    .logo h4{
+      font-size: 10px;
+    }
+    .logo h1{
+      font-size: 10px;
+    }
+    .par{
+      margin: auto;
+      margin-left: 0px;
+    }
+    .logo{
+      letter-spacing: 0px;
+      margin-left: 0px;
+    }
+    .photos img{
+      margin-left: 35px;
+    }
+    .photos p{
+      margin-left: 35px;
+    }
+    
+  }
+  @media only screen and (max-width: 425px) {
+    .box1{
+      height: 200px;
+      width: 270px !important;
+      margin-top: 80px;
+      margin-left:60px !important;
+    }
+    .box2{
+      height: 30px;
+      width: 270px !important;
+      margin-left:60px !important; 
+    }
+    .oval {
+      height: 30px;
+      width: 260px;
+      margin-left:70px !important;
+    }
+    .trapezoid {
+      margin-left:130px !important; 
+    }
+    .backcol h1{
+      margin-top: -0px !important;
+      font-size: 30px;
+    }
+    .backcol h2{
+      font-size: 30px;
+    }
+    .backcol p{
+      font-size: 10px;
+    }
+    .par{
+      margin:0px;
+    }
+    .logo h4{
+      font-size: 10px;
+    }
+    .logo h1{
+      font-size: 10px;
+    }
+    .par{
+      margin: auto;
+      margin-left: 0px;
+    }
+    .logo{
+      letter-spacing: 0px;
+      margin-left: 0px;
+    }
+    .photos img{
+      margin-left: 60px;
+    }
+    .photos p{
+      margin-left: 60px;
+    }
+    
+  }
+  @media only screen and (max-width: 768px) {
+    .box1{
+      height: 200px;
+      width: 270px !important;
+      /* margin-top: 80px; */
+      margin-left:60px !important;
+      overflow: hidden;
+    }
+    .box2{
+      height: 30px;
+      width: 270px !important;
+      margin-left:60px !important; 
+      overflow: hidden;
+    }
+    .oval {
+      height: 30px;
+      width: 260px;
+      margin-left:70px !important;
+    }
+    .trapezoid {
+      margin-left:130px !important; 
+    }
+    .backcol h1{
+      /* margin-top: 90px !important; */
+      font-size: 30px;
+    }
+    .backcol h2{
+      font-size: 30px;
+    }
+    .backcol p{
+      font-size: 10px;
+    }
+    .par{
+      margin:0px;
+    }
+    .logo h4{
+      font-size: 10px;
+    }
+    .logo h1{
+      font-size: 10px;
+    }
+    .par{
+      margin: auto;
+      margin-left: 0px;
+    }
+    .logo{
+      letter-spacing: 0px;
+      margin-left: 0px;
+    }
+   
+    
+  }
+ 
+  
+ 
