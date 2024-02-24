@@ -11,9 +11,15 @@ window.addEventListener('lode', () =>{
 
          if(!task) {
             alert("please fill out  the  task");
-         }else{
-            console.log("Sguccess");
+             return;
          }
+
+         const task_el = document.createElement("div");
+         task_el.classList.add("task");
+
+         const task_content_el = document.createElement("div");
+         task_content_el.classList.add("content");
+
 
 
 
