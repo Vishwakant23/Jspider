@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <h1>count valu:- <span id="count"></span></h1>
+    <button onclick="inc();">Increment</button>
+    <button onclick="dec();">Decrement</button>
+</div>
+    
+</body>
+<script>
+    let spanTag=document.getElementById('count');
+    let count=0;
+    spanTag.textContent=count;
+
+    function inc()
+    {
+        count++;
+        spanTag.textContent=count;
+        spanTag.style.color="red";
+
+    }
+    inc();
+    function dec()
+    {
+        count--;
+        spanTag.textContent=count;
+        spanTag.style.color="green";
+
+    }
+    dec();
+</script>
+</html>
