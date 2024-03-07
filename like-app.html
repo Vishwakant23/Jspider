@@ -47,7 +47,7 @@
 <footer style="margin-bottom:500px;"></footer>
 
 <!-- Script Code -->
-<script>
+<!-- <script>
     let likesBtn=document.querySelector('#like-btn');
     let dislikesBtn=document.querySelector('#dislike-btn');
     let likesDisplay=document.querySelector('#like-display');
@@ -65,8 +65,42 @@
     function likesInc{
         likes++;
         likeDispley.textContent=likes;
-        
+
     }
 
+</script> -->
+<script>
+    // Selecting elements from the DOM
+    let likesBtn = document.querySelector('#likes-btn');
+    let dislikesBtn = document.querySelector('#dislikes-btn');
+    let likesDisplay = document.querySelector('#likes-display');
+    let dislikesDisplay = document.querySelector('#dislikes-display');
+    let totalDisplay = document.querySelector('#total-display');
+
+    // Initializing counters
+    let likes = 0;
+    let dislikes = 0;
+    let total = 0;
+
+    // Displaying initial counts
+    likesDisplay.textContent = likes;
+    dislikesDisplay.textContent = dislikes;
+    totalDisplay.textContent = total;
+
+    // Event listener for incrementing likes
+    likesBtn.addEventListener('click', function() {
+        likes++;
+        total++;
+        likesDisplay.textContent = likes;
+        totalDisplay.textContent = total;
+    });
+
+    // Event listener for incrementing dislikes
+    dislikesBtn.addEventListener('click', function() {
+        dislikes++;
+        total++;
+        dislikesDisplay.textContent = dislikes;
+        totalDisplay.textContent = total;
+    });
 </script>
 </html>
