@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Creating immutable object element</h1>
+    <script>
+        const user ={
+            name: "vishu",
+            mobile: "9369117903",
+            dob: "04-10-1999",
+        };
+
+        const propertyDescriptor = {
+            value: user.dob,
+            writable: false
+        };
+
+        Object.defineProperty(user, "dob", propertyDescriptor);
+
+        user.dob = "10-10-2000";
+        console.log(user);
+    </script>
+    
+</body>
+</html>
