@@ -154,3 +154,66 @@ function displayStudents(students)
     }
 }
 displayStudents(students);
+  
+
+//validate 
+ 
+function validate()
+{
+    let isSubmitted=(validateUsername() && validatePassword());
+
+    if(isSubmitted)
+    {
+        alert("Form Is Validated");
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+//validate username
+function validateUsername()
+{
+    let inputEl=document.querySelector('#usn');
+    let usn=inputEl.value.trim();
+
+    if(usn=='')
+    {
+        applyColors(inputEl,"orangered");
+        return false;
+    }
+    else if(usn.length<=3)
+    {
+        alert("Min. 4 Chars Required!!")
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+
+//validate password
+function validatePassword()
+{
+    let inputEl=document.querySelector('#pwd');
+    let pwd=inputEl.value.trim();
+
+    if(pwd=='')
+    {
+        applyColors(inputEl,"orangered");
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+
+
+function applyColors(tag,color)
+{
+    tag.style.borderColor=color;
+}

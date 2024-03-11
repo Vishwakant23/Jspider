@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fonts/fa/css/all.css">
+    <style>
+        .hidden 
+        {
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text-warning">
+               <i class="fa fa-users"></i> Students Portal</a>
+        </div>
+    </nav>
+
+    <!-- LogIn Section -->
+    <section class="container-fluid mt-4" id="login-section">
+        <div class="row">
+            <div class="col-md-5 m-auto">
+                <div class="card">
+                    <div class="card-header bg-dark text-center">
+                        <h2 class="text-white">LogIn Here</h2>
+                    </div>
+                    <div class="card-body">
+                        <form onsubmit="return validate()" method="post" action="receivedData.html" id="form-submit">
+                            <div class="form-group mb-3">
+                                <input type="text" placeholder="Enter Username" class="form-control" id="usn">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="password" placeholder="Enter Password" class="form-control" id="pwd">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="submit" class="btn btn-dark">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Student Section -->
+    <section class="container-fluid mt-4" id="student-section">
+        <div class="row">
+            <div class="col-md-5 m-auto">
+                <div class="card text-center">
+                    <div class="card-header bg-dark text-warning">
+                        <h2>Student Details</h2>
+                    </div>
+                    <div class="card-body">
+                       <div class="row">
+                        <div class="col">
+                            <h3>Student Name:-</h3>
+                            <h3>Gender:-</h3>
+                            <h3>Percentage:-</h3>
+                            <h3>Pass/Fail:-</h3>
+                        </div>
+                        <div class="col">
+                            <h3 id="name">Student Name:-</h3>
+                            <h3 id="gender">Gender:-</h3>
+                            <h3 id="per">Percentage:-</h3>
+                            <h3 id="pf">Pass/Fail:-</h3>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="card-footer bg-dark text-warning">
+                       <p> Message</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Section -->
+    <section class="container-fluid mt-4" id="admin-section">
+        <div class="row text-center">
+            <div class="col-3">
+                <button class="btn btn-dark">Pass</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-dark">Fail</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-dark">Male</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-dark">Female</button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-7 m-auto">
+                <table class="table text-center">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>StuId</th>
+                            <th>StuName</th>
+                            <th>StuGender</th>
+                            <th>StuPercentage</th>
+                            <th>StuResult</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-section">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+<footer style="margin-bottom:500px;"></footer>
+
+<!-- Script Code -->
+<script src="login.js"></script>
+<!-- 
+validate
+function validate()
+{
+    let isSubmitted=(validateUsername() && validatePassword());
+
+    if(isSubmitted)
+    {
+        alert("Form Is Validated");
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+//validate username
+function validateUsername()
+{
+    let inputEl=document.querySelector('#usn');
+    let usn=inputEl.value.trim();
+
+    if(usn=='')
+    {
+        applyColors(inputEl,"orangered");
+        return false;
+    }
+    else if(usn.length<=3)
+    {
+        alert("Min. 4 Chars Required!!")
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+
+//validate password
+function validatePassword()
+{
+    let inputEl=document.querySelector('#pwd');
+    let pwd=inputEl.value.trim();
+
+    if(pwd=='')
+    {
+        applyColors(inputEl,"orangered");
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+
+
+function applyColors(tag,color)
+{
+    tag.style.borderColor=color;
+} -->
+
+<script src="students.js"></script>
+</html>
