@@ -25,14 +25,28 @@ function displayTasks()
         {
             eachTask+=`<li class="list-group-item list-group-item-dark mb-2">
             <span>${task}
-                <button class="close float-end">
-                    // <i class="fa fa-times-circle"></i>
+                <button class="close float-end ms-2">
+                <i class="ri-close-circle-line"></i>
+                </button>
+                <button class="update float-end">
+                <i class="ri-file-list-2-line"></i>
                 </button>
             </span>
         </li>`
         }
 
         document.querySelector('#task-list').innerHTML=eachTask;
+
+          // Add event listeners to delete buttons
+          let deleteButtons = document.querySelectorAll('.close');
+          deleteButtons.forEach(button => {
+              button.addEventListener('click', function() {
+                  let index = parseInt(this.getAttribute('data-index'));
+                  taskList.splice(index,1); // Remove task from the list
+                  localStorage.setItem('tasks', JSON.stringify(taskList)); // Update local storage
+                  displayTasks(); // Refresh displayed tasks
+              });
+          });// Add event listeners to delete buttons
     }
 }
 
