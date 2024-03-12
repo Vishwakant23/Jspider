@@ -26,7 +26,7 @@ function displayTasks()
             eachTask+=`<li class="list-group-item list-group-item-dark mb-2">
             <span>${task}
                 <button class="close float-end">
-                    <i class="fa fa-times-circle"></i>
+                    // <i class="fa fa-times-circle"></i>
                 </button>
             </span>
         </li>`
