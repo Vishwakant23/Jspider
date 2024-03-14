@@ -37,17 +37,55 @@ function displayTasks()
 
         document.querySelector('#task-list').innerHTML=eachTask;
 
-          // Add event listeners to delete buttons
+        //   // Add event listeners to delete buttons
           let deleteButtons = document.querySelectorAll('.close');
           deleteButtons.forEach(button => {
               button.addEventListener('click', function() {
                   let index = parseInt(this.getAttribute('data-index'));
                   taskList.splice(index,1); // Remove task from the list
+               
                   localStorage.setItem('tasks', JSON.stringify(taskList)); // Update local storage
                   displayTasks(); // Refresh displayed tasks
+                  if(taskListE1.length===0)
+                  {
+                     taskListE1.innerHTML='';
+                  }
               });
           });// Add event listeners to delete buttons
+
+
+
+    
+
+           
+          
+
     }
 }
 
 displayTasks();
+
+        //delete functionality
+
+        let taskListE1=document.querySelector('#task-list');
+        taskListE1.addEventListener('click', function(e){
+            let targetEl=e.target;
+            if(targetEl.classList.container('ri-close-circle-line'))
+            {
+                let actualEle=targetEl.parentElement.parentElement;
+                let selectedText=actualEle.innerText;
+                let taskList=localStorage.getItem('tasks')?JSON.parse
+                (localStorage.getItem("tasks")):[];
+
+                taskList=taskList.filter(function(task)
+                {
+                               return task!==selectedTask;
+                 });
+                 localStorage.setItem('tasks',JSON.stringify(taskList));
+                 displayTasks();
+                 if(taskListE1.length===0)
+                 {
+                    taskListE1.innerHTML='';
+                 }
+            }
+        })
