@@ -6,6 +6,9 @@ let btn3 = document.getElementById("test2");
 let btn4 = document.getElementById("test3");
 let btn5 = document.getElementById("test4");
 let btn6 = document.getElementById("test5");
+let sminTag = document.getElementById("m-se");
+let secTag = document.getElementById("sec");
+let minTag = document.getElementById("min");
 
 
 btn2.addEventListener("click", function(){
@@ -23,3 +26,10 @@ btn5.addEventListener("click", function(){
 btn6.addEventListener("click", function(){
     container1.textContent = sentences[4]
 })
+
+
+
+
+
+
+
